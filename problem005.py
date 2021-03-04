@@ -17,8 +17,10 @@ print(common_multiple)
 
 # from. codingdojang.com : 20 이하의 소수를 구한 후, 소수들의 곱을 구함 : 2^4 * 3^2 * 5 * 7 * 11 * 13 * 17 * 19 = 232792560
 
+MAX = 20
 prime_num = [2]
-for i in range(3, 20):
+
+for i in range(3, MAX):
     for j in range(2, i):
         if i % j ==0:
             break
@@ -29,7 +31,7 @@ for i in range(3, 20):
 common_multiple = 1
 for i in prime_num:
     while 1:
-        if i * i > 20:
+        if i * i > MAX:
             common_multiple *= i
             break
         i *= i
