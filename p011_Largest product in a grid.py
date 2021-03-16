@@ -64,7 +64,7 @@ largest = 0
 for row in range(grid):
     for column in range(row*grid, row*grid+(grid-serial+1)):
         product_h = 1
-        for k in range(column, column+serial):
+        for k in range(serial):
             product_h *= numbers[k]
             #print(numbers[k], end=" ")
             if product_h >= largest:
