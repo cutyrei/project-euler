@@ -5,9 +5,14 @@
 100! 의 자릿수를 모두 더하면 얼마입니까? """
 
 #1. 100!를 구한다.
-a = 1
-for i in range(1, 101):
-    a *= i
+# a = 1
+# for i in range(1, 101):
+#     a *= i
+
+from functools import reduce
+a = reduce(lambda x, y : x * y, [i for i in range(1, 101)])
+
+
 # 2. 1에서 나온 값의 각 자리 수의 합을 구한다.
 # b = str(a)
 # result = 0
