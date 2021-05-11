@@ -47,12 +47,4 @@ def find():
 
 print(find())
 
-
-
-
-
-
-
-
-
 print(time.time()-start)
